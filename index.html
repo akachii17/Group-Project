@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js with Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Stelle sicher, dass das Logo über anderen Inhalten liegt */
+        }
+
+        #threejs-container {
+            width: 80vw; /* Breite des Three.js-Bereichs anpassen */
+            height: 80vh; /* Höhe des Three.js-Bereichs anpassen */
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo-container">
+        <!-- Hier kannst du dein Logo einfügen -->
+        <img src="Bildschirm­foto 2024-02-22 um 03.10.28.png" alt="Logo" width="200">
+    </div>
+    <div id="threejs-container"></div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
